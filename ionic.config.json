@@ -1,0 +1,8 @@
+{
+  "name": "Dicount calculator with VAT",
+  "app_id": "Dicount calculator with VAT",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

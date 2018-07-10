@@ -1,0 +1,77 @@
+<ion-content padding>
+    
+  <ion-item>
+  
+  Calculate your End of services.
+  </ion-item>
+  
+Write your name :<br>
+<input type="text" [(ngModel)] = "numberN">
+<br>
+
+ 
+Write your Basic Salary :<br>
+<input type="number" [(ngModel)] = "numberB">
+<br>
+
+Write your Housing Allowance :<br>
+<input type="number" [(ngModel)] = "numberH">
+<br>
+
+Write your Transportation Allowance :<br>
+<input type="number" [(ngModel)] = "numberT">
+<br>
+
+Write your Other Allowance :<br>
+<input type="number" [(ngModel)] = "numberO">
+<br>
+
+
+
+<ion-item>
+  <ion-label>choose : </ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="date1"></ion-datetime>
+</ion-item>
+
+<ion-item>
+  <ion-label>choose : </ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="date2"></ion-datetime>
+</ion-item>
+
+<ion-label wrap text> مجموع الراتب Total package = {{typeOfAction}} </ion-label>
+ <ion-label fixed> {{typeOfAction}}</ion-label>
+
+ <ion-label wrap text>the difference is = {{typeOfDateYear}} </ion-label>
+ <ion-label fixed> {{typeOfDateYear}}</ion-label>
+
+ <ion-label wrap text>the difference is = {{typeOfDateMonth}} </ion-label>
+ <ion-label fixed> {{typeOfDateMonth}}</ion-label>
+
+ 
+  
+  <button ion-button  (click)="performFunction('a')" color="danger"> احسب </button>
+ 
+  
+
+
+
+ <!-- <ion-item>
+      
+      <ion-label wrap text> Discount الخصم = </ion-label>  
+      
+      <ion-label fixed> {{typeOfAction}}</ion-label>
+  </ion-item>-->
+  
+  <ion-item>
+      
+      <ion-label wrap text>Price without VAT سعر المنتج بعد الخصم بدون ضريبة  =</ion-label>
+      <ion-label fixed> {{result}}</ion-label>
+  </ion-item>
+  
+   <ion-item>
+      
+      <ion-label wrap text>Price with VAT سعر المنتج شامل الضريبة والخصم =</ion-label>
+      <ion-label fixed> {{resultvat}}</ion-label>
+  </ion-item>
+      
+</ion-content>
